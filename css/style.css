@@ -127,12 +127,11 @@ nav a:hover, nav a:focus{
   border: 2px solid;
 }
 
-
 /* Step 4: Write selector/rule property to style the container */
 .container {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr;
-  row-gap: 15px;
+  grid-gap: 15px;
 }
 
 /* Step 5: Write selector/rule property to add the background image to the 
@@ -145,7 +144,6 @@ first div in the grid  and place it in the grid. */
   background-size: cover;
   grid-column: 1 / -1;
 }
-
 
 /* Steps 6 and 7: Write the selector/rule properties to add place the next elements in the next
  four rows in the grid. */
@@ -193,13 +191,11 @@ first div in the grid  and place it in the grid. */
 }
 
  /* Step 8: Write the selector/rule property to style the .text-block class. */
- .text-block {
-  display: grid;
+.text-block {
   text-align: center;
-  justify-content: center;
   align-content: center;
   margin: auto 0;
- }
+}
 
 /* Add your media query here */
 @media screen and (min-width: 800px) {
@@ -230,5 +226,5 @@ first div in the grid  and place it in the grid. */
   .text-block {
     max-height: 250px;
     overflow: auto;
- }
+  }
 }
