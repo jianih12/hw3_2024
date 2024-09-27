@@ -195,9 +195,10 @@ first div in the grid  and place it in the grid. */
  /* Step 8: Write the selector/rule property to style the .text-block class. */
  .text-block {
   display: grid;
-  align-content:  center;
-  justify-content: center;
   text-align: center;
+  justify-content: center;
+  align-content: center;
+  margin: auto 0;
  }
 
 /* Add your media query here */
@@ -213,6 +214,7 @@ first div in the grid  and place it in the grid. */
   .container {
     display: grid;
     grid-template-columns: 50px auto 500px auto 50px;
+    align-items: center;
   }  
 
   /* Steps 11 and 12: Update the grid-column property of the grid's children (where-needed)*/
